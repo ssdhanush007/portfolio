@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dhanush's Portfolio</title>
+    <!-- Link to the CSS file -->
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -19,7 +20,7 @@
     </header>
     <section id="about">
         <h2>About Me</h2>
-        <p>Hi, I'm Dhanush! I'm passionate about web development and scripting.</p>
+        <p>Hi, I'm Dhanush! I love web development and scripting.</p>
     </section>
     <section id="projects">
         <h2>My Projects</h2>
@@ -27,22 +28,20 @@
     </section>
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email me at: <a href="mailto:your_email@example.com">your_email@example.com</a></p>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="_replyto" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
     </section>
-    <section>
-        <form action="https://formspree.io/f/xblgqlgn"
-        method="POST"
-        enctype="multipart/form-data"
-      >
-        <label>
-          Your email:
-          <input type="email" name="email">
-        </label>
-        <label>
-          Your file:
-          <input type="file" name="upload">
-        </label>
-        <button type="submit">Send</button>
-      </form</section> 
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>
